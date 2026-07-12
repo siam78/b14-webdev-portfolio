@@ -198,3 +198,105 @@ ul li a {
 .box6 {
     grid-area: six;
 }
+
+/* foooter */
+/* ===========================
+   Footer
+=========================== */
+
+.footer {
+    margin-top: 80px;
+    padding: 70px 60px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+
+    background: #FFF8F3;
+    border-radius: 16px;
+}
+
+/* ===========================
+   Left Side
+=========================== */
+
+.footer__title {
+    margin-bottom: 16px;
+}
+
+.footer__description {
+    margin-bottom: 24px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* ===========================
+   Social Icons
+=========================== */
+
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.social-links a:hover {
+    background: rgba(253, 110, 10, .12);
+    transform: translateY(-3px);
+}
+
+.social-links img {
+    width: 22px;
+}
+
+/* ===========================
+   Form
+=========================== */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 14px 18px;
+
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    outline: none;
+
+    font: inherit;
+    resize: vertical;
+
+    transition: .3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #FD6E0A;
+    box-shadow: 0 0 0 4px rgba(253, 110, 10, .15);
+}
+
+.contact-form textarea {
+    min-height: 150px;
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
